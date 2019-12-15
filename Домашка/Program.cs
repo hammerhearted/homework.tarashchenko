@@ -9,12 +9,12 @@ namespace График
             var x = Input("x");
             var y = Input("y");
 
-            Console.WriteLine("Значение выражения: " + LogicalExpression(x, y));
+            Console.WriteLine("Значение выражения: " + LogicalExpression(y));
             Console.ReadKey();
         }
-        static bool LogicalExpression(double y, double x)
+        static bool LogicalExpression(double y)
         {
-            return x < 1.5 & y > -2;
+            return y < 1.5 && y > -2;
         }
         static double Input(string name)
         {
