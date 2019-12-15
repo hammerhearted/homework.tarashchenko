@@ -21,13 +21,20 @@ namespace SinCos
 
 
             double angle12 = RadianToDegree(angle1);
+            double angle22 = RadianToDegree(angle2);
+            double angle32 = RadianToDegree(angle3);
+            double angle42 = RadianToDegree(angle4);
 
-                static double SinRadian(double sinus)
+            static double SinRadian(double sinus)
             {
-                return sinus = Math.Round(Math.Sin(sinus),3);
+                return Math.Round(Math.Sin(sinus),3);
             }
 
-            Console.WriteLine("синус угла {0} градусов равен {1}", angle1, SinRadian(angle12));
+            static double CosRadian(double cosinus)
+            {
+                return Math.Round(Math.Cos(cosinus), 3);
+            }
+            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {3}", angle1, SinRadian(angle12), CosRadian(angle12));
             
 
             
