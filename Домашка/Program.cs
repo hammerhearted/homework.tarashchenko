@@ -8,11 +8,11 @@ namespace Трапеция
         {
 
             Console.WriteLine("введите высоту");
-            double h = int.Parse(Console.ReadLine());
+            var h = double.Parse(Console.ReadLine());
             Console.WriteLine("введите большее основание");
-            double b = int.Parse(Console.ReadLine());
+            var b = double.Parse(Console.ReadLine());
             Console.WriteLine("введите меньшее основание");
-            double c = int.Parse(Console.ReadLine());
+            var c = double.Parse(Console.ReadLine());
             double s = h * (c + b) / 2;
             Console.WriteLine("Площадь трапеции равна = ");
             Console.WriteLine(s);
