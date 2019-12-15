@@ -7,7 +7,10 @@ namespace SinCos
         static void Main(string[] args)
         {
             Console.WriteLine("Градусные меры углов равны {0},{1},{2}", 15, 37, 113);
-             
+            static double Rad (double angle1, double angle2, double angle3)
+            {
+
+            }
             double angle1 = 15;
             Console.WriteLine(Math.Round(Math.Sin(angle1), 3));
             Console.WriteLine(Math.Round(Math.Cos(angle1), 3));
@@ -18,7 +21,7 @@ namespace SinCos
             Console.WriteLine(Math.Round(Math.Sin(angle3), 3));
             Console.WriteLine(Math.Round(Math.Cos(angle3), 3));
             Console.WriteLine("Введите значение угла");
-            double angle4 = int.Parse(Console.ReadLine());
+            double angle4 = double.Parse(Console.ReadLine());
             Console.WriteLine(Math.Round(Math.Sin(angle4), 3));
             Console.WriteLine(Math.Round(Math.Cos(angle4), 3));
 
