@@ -6,6 +6,8 @@ namespace SinCos
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Градусные меры углов равны {0},{1},{2}", 15, 37, 113);
+             
             double angle1 = 15;
             Console.WriteLine(Math.Round(Math.Sin(angle1), 3));
             Console.WriteLine(Math.Round(Math.Cos(angle1), 3));
