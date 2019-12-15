@@ -16,15 +16,20 @@ namespace Арифметическая_прогрессия__Массивы1_
             int[] numbers;
             numbers = new int[10];
             numbers[0] = first;
-            numbers[1] = numbers[0] + remainder;
-            numbers[2] = numbers[1] + remainder;
-            numbers[3] = numbers[2] + remainder;
-            numbers[4] = numbers[3] + remainder;
-            numbers[5] = numbers[4] + remainder;
-            numbers[6] = numbers[5] + remainder;
-            numbers[7] = numbers[6] + remainder;
-            numbers[8] = numbers[7] + remainder;
-            numbers[9] = numbers[8] + remainder;
+            for (var n = 0; n < 9; n++)
+                numbers[n+1] = numbers[n] + remainder;
+            //numbers[0] = first;
+            //numbers[1] = numbers[0] + remainder;
+            //numbers[2] = numbers[1] + remainder;
+            //numbers[3] = numbers[2] + remainder;
+            //numbers[4] = numbers[3] + remainder;
+            //numbers[5] = numbers[4] + remainder;
+            //numbers[6] = numbers[5] + remainder;
+            //numbers[7] = numbers[6] + remainder;
+            //numbers[8] = numbers[7] + remainder;
+            //numbers[9] = numbers[8] + remainder;
+
+
 
             for (var i = 0; i < numbers.Length; i++)
                 Console.Write("{0} ", numbers[i]);
