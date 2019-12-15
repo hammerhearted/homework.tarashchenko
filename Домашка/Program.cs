@@ -11,11 +11,12 @@ namespace SinCos
             double angle3 = 113;
 
             Console.WriteLine("Градусные меры углов равны {0},{1},{2}", angle1, angle2, angle3);
-            static double Rad (double angle1, double angle2, double angle3)
+            static double RadianToDegree(double angle)
             {
-
+                return angle * (180.0 / Math.PI);
             }
-           
+
+            Console.WriteLine(RadianToDegree(angle1));
             Console.WriteLine(Math.Round(Math.Sin(angle1), 3));
             Console.WriteLine(Math.Round(Math.Cos(angle1), 3));
             
