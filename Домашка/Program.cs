@@ -14,7 +14,7 @@ namespace SinCos
 
             Console.WriteLine("Градусные меры углов равны {0},{1},{2},{3}", angle1, angle2, angle3, angle4);
 
-            static double RadianToDegree(double angle)
+            double RadianToDegree(double angle)
             {
                 return angle * (Math.PI/180);
             }
@@ -25,20 +25,20 @@ namespace SinCos
             double angle32 = RadianToDegree(angle3);
             double angle42 = RadianToDegree(angle4);
 
-            static double SinRadian(double sinus)
+             double SinRadian(double sinus)
             {
                  return Math.Round(Math.Sin(sinus),3);
               
             }
 
-            static double CosRadian(double cosinus)
+             double CosRadian(double cosinus)
             {
                 return Math.Round(Math.Cos(cosinus), 3);
             }
-            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {3}", angle1, SinRadian(angle12), CosRadian(angle12));
-            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {3}", angle2, SinRadian(angle22), CosRadian(angle22));
-            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {3}", angle3, SinRadian(angle32), CosRadian(angle32));
-            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {3}", angle4, SinRadian(angle42), CosRadian(angle42));
+            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle1, SinRadian(angle12), CosRadian(angle12));
+            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle2, SinRadian(angle22), CosRadian(angle22));
+            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle3, SinRadian(angle32), CosRadian(angle32));
+            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle4, SinRadian(angle42), CosRadian(angle42));
 
 
             //Console.WriteLine(RadianToDegree(angle1));
