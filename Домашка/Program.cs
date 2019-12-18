@@ -35,10 +35,18 @@ namespace SinCos
             {
                 return Math.Round(Math.Cos(cosinus), 3);
             }
-            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle1, SinRadian(angle12), CosRadian(angle12));
+
+            void WriteResult(double defaultangle, double sin, double cos)
+            {
+                Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", defaultangle, SinRadian(sin), CosRadian(cos));
+                return;
+            }
+
+            
+            /*Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle1, SinRadian(angle12), CosRadian(angle12));
             Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle2, SinRadian(angle22), CosRadian(angle22));
             Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle3, SinRadian(angle32), CosRadian(angle32));
-            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle4, SinRadian(angle42), CosRadian(angle42));
+            Console.WriteLine("синус угла {0} градусов равен {1}, косинус равен {2}", angle4, SinRadian(angle42), CosRadian(angle42));*/
 
 
             //Console.WriteLine(RadianToDegree(angle1));
